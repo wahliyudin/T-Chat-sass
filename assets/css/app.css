@@ -1,0 +1,1065 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+}
+
+:root {
+  --primary: #F29393;
+  --secondary: #FAFF00;
+  --primary-light: #FFF9F3;
+}
+
+.app {
+  overflow-x: hidden;
+  background-color: #FFF9F3;
+}
+
+.app .bg-first {
+  background-image: url("../images/hero/bg.png");
+  background-repeat: no-repeat;
+  background-size: 102% calc(100% - 2%);
+}
+
+.app .bg-first .wrapper-first {
+  max-width: 1186px;
+  margin: 0 auto;
+}
+
+.app .bg-first .wrapper-first .nav {
+  padding-top: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .bg-first .wrapper-first .nav .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app .bg-first .wrapper-first .nav .nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .bg-first .wrapper-first .nav .nav-wrapper li:not(:last-child) {
+  margin-right: 35px;
+}
+
+.app .bg-first .wrapper-first .nav .nav-wrapper li a {
+  text-decoration: none;
+}
+
+.app .bg-first .wrapper-first .nav .nav-wrapper .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 28.5px;
+}
+
+.app .bg-first .wrapper-first .nav .nav-wrapper .nav-item a {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: #222222;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.app .bg-first .wrapper-first .nav .nav-wrapper .nav-item:hover a {
+  color: var(--primary);
+}
+
+.app .bg-first .wrapper-first .nav .nav-wrapper .nav-item::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.app .bg-first .wrapper-first .nav .nav-wrapper .nav-item:hover::after {
+  width: 50%;
+}
+
+.app .bg-first .wrapper-first .nav .nav-right .nav-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 49px;
+}
+
+.app .bg-first .wrapper-first .nav .nav-right .nav-buttons button:not(:last-child) {
+  margin-right: 22px;
+}
+
+.app .bg-first .wrapper-first .nav .nav-right .nav-buttons .button-border {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--secondary)), to(var(--primary)));
+  background: linear-gradient(to bottom, var(--secondary), var(--primary));
+}
+
+.app .bg-first .wrapper-first .nav .nav-right .nav-buttons .button-border span {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary);
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.app .bg-first .wrapper-first .nav .nav-right .nav-buttons .button-full {
+  background: -webkit-gradient(linear, left top, right top, from(var(--secondary)), to(var(--primary)));
+  background: linear-gradient(to right, var(--secondary), var(--primary));
+}
+
+.app .bg-first .wrapper-first .nav .nav-right .nav-buttons .button-full span {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.app .bg-first .wrapper-first .nav .nav-right .nav-buttons .button-border,
+.app .bg-first .wrapper-first .nav .nav-right .nav-buttons .button-full {
+  border-radius: 20px;
+  width: 133px;
+  height: 46px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .bg-first .wrapper-first .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 46px;
+  position: relative;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .bg-first .wrapper-first .hero .hero-left h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  margin-top: 47.5px;
+  width: 100%;
+}
+
+.app .bg-first .wrapper-first .hero .hero-left p {
+  font-weight: 500;
+  font-size: 18px;
+  width: 452px;
+  margin-top: 32px;
+}
+
+.app .bg-first .wrapper-first .hero .hero-left .hero-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 96px;
+}
+
+.app .bg-first .wrapper-first .hero .hero-left .hero-buttons button {
+  background: -webkit-gradient(linear, left top, right top, from(var(--secondary)), to(var(--primary)));
+  background: linear-gradient(to right, var(--secondary), var(--primary));
+  color: white;
+  border: none;
+  width: 174px;
+  height: 53px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 26px;
+  cursor: pointer;
+}
+
+.app .bg-first .wrapper-first .hero .hero-left .hero-buttons a {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25.65px;
+}
+
+.app .bg-first .wrapper-first .hero .hero-right {
+  width: 50%;
+  position: relative;
+}
+
+.app .bg-first .wrapper-first .hero .hero-right img {
+  width: 700px;
+  height: 578px;
+}
+
+.app .bg-first .wrapper-first .support {
+  width: 1065px;
+  height: 160px;
+  border-radius: 10px 100px 100px 10px;
+  background-color: white;
+  margin-top: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .bg-first .wrapper-first .support h3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #2F2E4180;
+  margin-left: 33px;
+  margin-top: 57px;
+  margin-bottom: 58px;
+}
+
+.app .bg-first .wrapper-first .support .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 93px;
+}
+
+.app .bg-first .wrapper-first .support .logos img:nth-child(1) {
+  width: 171px;
+  height: 57px;
+}
+
+.app .bg-first .wrapper-first .support .logos img:nth-child(2) {
+  width: 337px;
+  height: 139px;
+}
+
+.app .bg-first .wrapper-first .support .logos img:nth-child(3) {
+  width: 251px;
+  height: 54px;
+}
+
+.app .bg-first .wrapper-first .feature {
+  margin-top: 111px;
+}
+
+.app .bg-first .wrapper-first .feature h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.app .bg-first .wrapper-first .feature p {
+  font-size: 18px;
+  font-weight: 500;
+  width: 485px;
+  margin-top: 21px;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 73.15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card {
+  width: 352px;
+  height: 461px;
+  background-color: white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card .card-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card .card-middle > span {
+  color: #2F2E41CC;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 23px;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card img {
+  width: 126.7px;
+  height: 106.8px;
+  margin-top: 36px;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card .card-button {
+  width: 218px;
+  height: 48px;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--secondary)), to(var(--primary)));
+  background: linear-gradient(to bottom, var(--secondary), var(--primary));
+  border: none;
+  border-radius: 20px;
+  padding: 1px;
+  margin-bottom: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card .card-button span {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary);
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card:hover .card-button {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card:hover .card-button span {
+  background-color: transparent;
+  color: white;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card:last-child {
+  padding-left: 40px;
+  padding-right: 17px;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card:last-child span {
+  text-align: start;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card:not(:last-child) {
+  margin-right: 45px;
+}
+
+.app .bg-first .wrapper-first .feature .feature-cards .card:hover {
+  -webkit-transform: translateY(-38px);
+          transform: translateY(-38px);
+  box-shadow: 3px 7px 33px -17px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 7px 33px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 7px 33px -17px rgba(0, 0, 0, 0.75);
+}
+
+.app .bg-second {
+  background-image: url("../images/about/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 105%;
+  background-position: bottom;
+}
+
+.app .bg-second .wrapper-second {
+  margin-top: 146px;
+  max-width: 1186px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app .bg-second .wrapper-second .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.app .bg-second .wrapper-second .about .about-left {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 72%;
+}
+
+.app .bg-second .wrapper-second .about .about-left img {
+  width: 511px;
+  height: 620px;
+}
+
+.app .bg-second .wrapper-second .about .about-left .about-cards {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0;
+  top: 45px;
+}
+
+.app .bg-second .wrapper-second .about .about-left .about-cards .about-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px var(--primary) solid;
+  width: 432px;
+  height: 107px;
+}
+
+.app .bg-second .wrapper-second .about .about-left .about-cards .about-card p {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-left: 48px;
+}
+
+.app .bg-second .wrapper-second .about .about-left .about-cards .about-card img {
+  width: 78px;
+  height: 78px;
+  margin-top: 14px;
+  margin-right: 20px;
+}
+
+.app .bg-second .wrapper-second .about .about-left .about-cards .about-card:not(:last-child) {
+  margin-bottom: 62px;
+}
+
+.app .bg-second .wrapper-second .about .about-left .about-cards .about-card:nth-child(2) {
+  -webkit-transform: translateX(59px);
+          transform: translateX(59px);
+}
+
+.app .bg-second .wrapper-second .about .about-right {
+  width: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: end;
+  margin-top: 20px;
+}
+
+.app .bg-second .wrapper-second .about .about-right h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2F2E41;
+  width: 265px;
+}
+
+.app .bg-second .wrapper-second .about .about-right p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2F2E41CC;
+  margin-top: 46px;
+  width: 209px;
+}
+
+.app .bg-second .wrapper-second .about .about-right button {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  border: none;
+  color: white;
+  width: 218px;
+  height: 48px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 85px;
+}
+
+.app .bg-second .wrapper-second .pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 217px;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-top .pricing-left h1 {
+  font-weight: 700;
+  font-size: 48px;
+  width: 506px;
+  color: #2F2E41;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-top .pricing-left p {
+  font-size: 18px;
+  font-weight: 500;
+  width: 392px;
+  margin-top: 11px;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-top .pricing-right {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  padding: 1px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 270px;
+  height: 50px;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-top .pricing-right .toggle {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-top .pricing-right .toggle button:first-child {
+  background-color: transparent;
+  border: none;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 18px;
+  width: 50%;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-top .pricing-right .toggle button:last-child {
+  width: 50%;
+  border: none;
+  height: 100%;
+  border-radius: 30px;
+  font-weight: 500;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom {
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+  height: 484px;
+  margin-top: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  width: 300px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card ul li {
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card:first-child {
+  margin-left: 25px;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card:last-child {
+  margin-right: 25px;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card h1 {
+  font-weight: 600px;
+  font-size: 34px;
+  color: #222222E5;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card > span {
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card .pricing-btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  border: none;
+  width: 170px;
+  height: 44px;
+  border-radius: 30px;
+  padding: 1px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card .pricing-btn > span {
+  color: var(--primary);
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card .pricing-btn-full {
+  width: 170px;
+  height: 44px;
+  border-radius: 30px;
+  border: none;
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 48px;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25px;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card ul li:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card ul li:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card ul li svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 28px;
+  margin-top: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card ul li > span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #2F2E41B2;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card:hover {
+  -webkit-box-shadow: 0px 30px 50px 0px #0000000D;
+          box-shadow: 0px 30px 50px 0px #0000000D;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F29393), color-stop(263.5%, #FAFF00), color-stop(263.5%, #FAFF00));
+  background: linear-gradient(180deg, #F29393 0%, #FAFF00 263.5%, #FAFF00 263.5%);
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card:hover h1,
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card:hover span {
+  color: white;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card:hover ul li svg path {
+  fill: #FFFFFF;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card:hover .pricing-btn {
+  width: 170px;
+  height: 44px;
+  border-radius: 30px;
+  border: none;
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 48px;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  border: none;
+  width: 170px;
+  height: 44px;
+  border-radius: 30px;
+  padding: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card:hover .pricing-btn > span {
+  color: var(--primary);
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.app .bg-second .wrapper-second .get-free {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 191px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .bg-second .wrapper-second .get-free .get-free-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.app .bg-second .wrapper-second .get-free .get-free-top h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #2F2E41;
+}
+
+.app .bg-second .wrapper-second .get-free .get-free-top p {
+  color: #2F2E41CC;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.app .bg-second .wrapper-second .get-free .get-free-bottom {
+  width: 566px;
+  height: 83px;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  border-radius: 20px;
+  padding: 1px;
+  margin-top: 61px;
+}
+
+.app .bg-second .wrapper-second .get-free .get-free-bottom .get-free-bottom-wrapper {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px;
+}
+
+.app .bg-second .wrapper-second .get-free .get-free-bottom .get-free-bottom-wrapper input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 0 56px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2F2E4199;
+}
+
+.app .bg-second .wrapper-second .get-free .get-free-bottom .get-free-bottom-wrapper input:focus {
+  outline: none;
+}
+
+.app .bg-second .wrapper-second .get-free .get-free-bottom .get-free-bottom-wrapper button {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  width: 166.29px;
+  color: white;
+  border: none;
+  height: 70px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.app footer {
+  width: 100%;
+  background-color: #F293933B;
+  height: 451px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 69px;
+}
+
+.app footer .footer-left {
+  margin-left: 112px;
+  margin-top: 57px;
+}
+
+.app footer .footer-left img {
+  width: 266px;
+  height: 90px;
+}
+
+.app footer .footer-left p {
+  color: #2F2E41B2;
+  font-size: 18px;
+  font-weight: 500;
+  width: 293px;
+  margin-top: 27px;
+}
+
+.app footer .footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 65px;
+  margin-left: 108px;
+}
+
+.app footer .footer-right .footer-right-item:nth-child(1) {
+  margin-right: 110px;
+}
+
+.app footer .footer-right .footer-right-item:nth-child(2) {
+  margin-right: 68px;
+}
+
+.app footer .footer-right .footer-right-item h2 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #2F2E41;
+}
+
+.app footer .footer-right .footer-right-item ul {
+  margin-top: 11px;
+}
+
+.app footer .footer-right .footer-right-item ul li {
+  font-weight: 500;
+  font-size: 16px;
+  color: #2F2E41B2;
+}
+
+.app footer .footer-right .footer-right-item ul li:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.app footer .footer-right .footer-right-item:last-child ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app footer .footer-right .footer-right-item:last-child ul li:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.app footer .footer-right .footer-right-item:last-child ul li img:not(:last-child) {
+  margin-right: 21px;
+}
+
+.app footer .footer-right .footer-right-item:last-child ul li:last-child span {
+  margin-left: 12px;
+}
+/*# sourceMappingURL=app.css.map */

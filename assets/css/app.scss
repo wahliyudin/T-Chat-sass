@@ -14,6 +14,7 @@
     --primary-light: #FFF9F3;
 }
 
+
 .app {
     overflow-x: hidden;
     background-color: #FFF9F3;
@@ -109,7 +110,9 @@
                     }
 
                     .button-full {
-                        background: linear-gradient(to right, var(--secondary), var(--primary));
+                        background: linear-gradient(91.69deg, #FAFF00 -54.34%, #F29393 74.99%);
+
+                        cursor: pointer;
 
                         span {
                             font-size: 18px;
@@ -162,7 +165,8 @@
                         margin-top: 96px;
 
                         button {
-                            background: linear-gradient(to right, var(--secondary), var(--primary));
+                            background: linear-gradient(97.39deg, #FAFF00 -68.67%, #F29393 114.87%);
+
                             color: white;
                             border: none;
                             width: 174px;
@@ -324,7 +328,8 @@
 
                         &:hover {
                             .card-button {
-                                background: linear-gradient(to bottom, var(--primary), var(--secondary));
+                                background: linear-gradient(156.53deg, #F29393 14.31%, #FAFF00 198.27%);
+
                                 color: white;
                                 font-weight: 500;
                                 font-size: 18px;
@@ -455,8 +460,10 @@
                     }
 
                     button {
-                        background: linear-gradient(to bottom, var(--primary), var(--secondary));
+                        background: linear-gradient(156.53deg, #F29393 14.31%, #FAFF00 198.27%);
+
                         border: none;
+                        cursor: pointer;
                         color: white;
                         width: 218px;
                         height: 48px;
@@ -531,7 +538,8 @@
                                     height: 100%;
                                     border-radius: 30px;
                                     font-weight: 500;
-                                    background: linear-gradient(to bottom, var(--primary), var(--secondary));
+                                    background: linear-gradient(178.36deg, #F29393 1.39%, #FAFF00 174.44%);
+
                                     font-size: 18px;
                                     color: white;
                                     cursor: pointer;
@@ -768,7 +776,8 @@
                         }
 
                         button {
-                            background: linear-gradient(to bottom, var(--primary), var(--secondary));
+                            background: linear-gradient(180deg, #F29393 23.48%, #FAFF00 190.96%);
+
                             width: 166.29px;
                             color: white;
                             border: none;
@@ -1162,6 +1171,17 @@
         flex-direction: column !important;
         height: auto !important;
 
+        .footer-left {
+            img {
+                width: 200px !important;
+                height: 70px !important;
+            }
+
+            p {
+                font-size: 15px !important;
+            }
+        }
+
         .footer-right {
             flex-direction: column !important;
 
@@ -1172,6 +1192,227 @@
 
                 &:last-child {
                     margin-bottom: 50px !important;
+                }
+
+                h2 {
+                    font-size: 25px !important;
+                }
+
+                ul {
+                    li {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    .app {
+
+        .bg-first {
+            .wrapper-first {
+                max-width: 900px;
+
+                .nav {
+                    .nav-wrapper {
+                        li {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+
+            .hero {
+                align-items: flex-start !important;
+
+                .hero-left {
+                    h1 {
+                        font-size: 35px !important;
+                        margin-top: 70px !important;
+                    }
+
+                    p {
+                        font-size: 15px !important;
+                        margin-top: 25px !important;
+                    }
+
+                    .hero-buttons {
+                        margin-top: 70px !important;
+                    }
+                }
+
+                .hero-right {
+                    img {
+                        width: 500px !important;
+                        height: 400px !important;
+                    }
+                }
+            }
+
+            .support {
+                transform: scale(0.7);
+                transform-origin: left;
+            }
+
+            .feature {
+                h1 {
+                    font-size: 35px !important;
+                }
+
+                p {
+                    font-size: 15px !important;
+                }
+
+                .feature-cards {
+                    .card {
+                        height: 400px !important;
+
+                        .card-middle {
+                            &>span {
+                                font-size: 15px !important;
+                            }
+                        }
+
+                        .card-button {
+                            width: 160px !important;
+                            height: 40px !important;
+
+                            span {
+                                font-size: 15px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bg-second {
+        .wrapper-second {
+            max-width: 900px !important;
+
+            .about {
+                flex-direction: column !important;
+                justify-content: center !important;
+
+                .about-left {
+                    width: 100% !important;
+
+                    img {
+                        transform: scale(0.9);
+                    }
+
+                    .about-cards {
+                        right: 100px !important;
+
+                        transform: scale(0.9);
+                    }
+                }
+
+                .about-right {
+                    width: 100% !important;
+                    align-items: center !important;
+                    text-align: center !important;
+
+                    h1 {
+                        width: 80% !important;
+                    }
+
+                    p {
+                        font-size: 15px !important;
+                        width: 60% !important;
+                    }
+                }
+            }
+
+            .pricing {
+                .pricing-top {
+                    .pricing-left {
+                        h1 {
+                            font-size: 40px !important;
+                        }
+
+                        p {
+                            font-size: 15px !important;
+                        }
+                    }
+
+                    .pricing-right {
+                        margin-top: 20px !important;
+                    }
+                }
+
+                .pricing-bottom {
+                    flex-wrap: wrap !important;
+                    height: auto !important;
+                    justify-content: space-evenly !important;
+                    align-items: flex-start !important;
+                    padding: 40px 50px !important;
+
+                    .pricing-card {
+
+                        &:nth-child(3),
+                        &:nth-child(4) {
+                            margin-top: 100px !important;
+                        }
+
+                        .pricing-btn {
+                            margin-bottom: 30px !important;
+                        }
+                    }
+                }
+            }
+
+            .get-free {
+                .get-free-top {
+                    h1 {
+                        font-size: 40px !important;
+                    }
+
+                    p {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer-left {
+            margin: 50px 50px !important;
+
+            img {
+                width: 200px !important;
+                height: 70px !important;
+            }
+
+            p {
+                font-size: 15px !important;
+            }
+        }
+
+        .footer-right {
+            margin-left: 20px !important;
+
+            .footer-right-item {
+                &:nth-child(1) {
+                    margin-right: 50px !important;
+                }
+
+                &:nth-child(2) {
+                    margin-right: 34px !important;
+                }
+
+                h2 {
+                    font-size: 25px !important;
+                }
+
+                ul {
+                    li {
+                        font-size: 15px !important;
+                    }
                 }
             }
         }

@@ -142,8 +142,8 @@
 }
 
 .app .bg-first .wrapper-first .nav .nav-right .nav-buttons .button-full {
-  background: -webkit-gradient(linear, left top, right top, from(var(--secondary)), to(var(--primary)));
-  background: linear-gradient(to right, var(--secondary), var(--primary));
+  background: linear-gradient(91.69deg, #FAFF00 -54.34%, #F29393 74.99%);
+  cursor: pointer;
 }
 
 .app .bg-first .wrapper-first .nav .nav-right .nav-buttons .button-full span {
@@ -211,8 +211,7 @@
 }
 
 .app .bg-first .wrapper-first .hero .hero-left .hero-buttons button {
-  background: -webkit-gradient(linear, left top, right top, from(var(--secondary)), to(var(--primary)));
-  background: linear-gradient(to right, var(--secondary), var(--primary));
+  background: linear-gradient(97.39deg, #FAFF00 -68.67%, #F29393 114.87%);
   color: white;
   border: none;
   width: 174px;
@@ -416,8 +415,7 @@
 }
 
 .app .bg-first .wrapper-first .feature .feature-cards .card:hover .card-button {
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
-  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  background: linear-gradient(156.53deg, #F29393 14.31%, #FAFF00 198.27%);
   color: white;
   font-weight: 500;
   font-size: 18px;
@@ -568,9 +566,9 @@
 }
 
 .app .bg-second .wrapper-second .about .about-right button {
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
-  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  background: linear-gradient(156.53deg, #F29393 14.31%, #FAFF00 198.27%);
   border: none;
+  cursor: pointer;
   color: white;
   width: 218px;
   height: 48px;
@@ -667,8 +665,7 @@
   height: 100%;
   border-radius: 30px;
   font-weight: 500;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
-  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  background: linear-gradient(178.36deg, #F29393 1.39%, #FAFF00 174.44%);
   font-size: 18px;
   color: white;
   cursor: pointer;
@@ -964,8 +961,8 @@
 }
 
 .app .bg-second .wrapper-second .get-free .get-free-bottom .get-free-bottom-wrapper button {
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
-  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(23.48%, #F29393), color-stop(190.96%, #FAFF00));
+  background: linear-gradient(180deg, #F29393 23.48%, #FAFF00 190.96%);
   width: 166.29px;
   color: white;
   border: none;
@@ -1340,6 +1337,13 @@
             flex-direction: column !important;
     height: auto !important;
   }
+  footer .footer-left img {
+    width: 200px !important;
+    height: 70px !important;
+  }
+  footer .footer-left p {
+    font-size: 15px !important;
+  }
   footer .footer-right {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -1351,6 +1355,162 @@
   }
   footer .footer-right .footer-right-item:last-child {
     margin-bottom: 50px !important;
+  }
+  footer .footer-right .footer-right-item h2 {
+    font-size: 25px !important;
+  }
+  footer .footer-right .footer-right-item ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .app .bg-first .wrapper-first {
+    max-width: 900px;
+  }
+  .app .bg-first .wrapper-first .nav .nav-wrapper li {
+    display: none !important;
+  }
+  .app .bg-first .hero {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .app .bg-first .hero .hero-left h1 {
+    font-size: 35px !important;
+    margin-top: 70px !important;
+  }
+  .app .bg-first .hero .hero-left p {
+    font-size: 15px !important;
+    margin-top: 25px !important;
+  }
+  .app .bg-first .hero .hero-left .hero-buttons {
+    margin-top: 70px !important;
+  }
+  .app .bg-first .hero .hero-right img {
+    width: 500px !important;
+    height: 400px !important;
+  }
+  .app .bg-first .support {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  .app .bg-first .feature h1 {
+    font-size: 35px !important;
+  }
+  .app .bg-first .feature p {
+    font-size: 15px !important;
+  }
+  .app .bg-first .feature .feature-cards .card {
+    height: 400px !important;
+  }
+  .app .bg-first .feature .feature-cards .card .card-middle > span {
+    font-size: 15px !important;
+  }
+  .app .bg-first .feature .feature-cards .card .card-button {
+    width: 160px !important;
+    height: 40px !important;
+  }
+  .app .bg-first .feature .feature-cards .card .card-button span {
+    font-size: 15px !important;
+  }
+  .bg-second .wrapper-second {
+    max-width: 900px !important;
+  }
+  .bg-second .wrapper-second .about {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .bg-second .wrapper-second .about .about-left {
+    width: 100% !important;
+  }
+  .bg-second .wrapper-second .about .about-left img {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .bg-second .wrapper-second .about .about-left .about-cards {
+    right: 100px !important;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .bg-second .wrapper-second .about .about-right {
+    width: 100% !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    text-align: center !important;
+  }
+  .bg-second .wrapper-second .about .about-right h1 {
+    width: 80% !important;
+  }
+  .bg-second .wrapper-second .about .about-right p {
+    font-size: 15px !important;
+    width: 60% !important;
+  }
+  .bg-second .wrapper-second .pricing .pricing-top .pricing-left h1 {
+    font-size: 40px !important;
+  }
+  .bg-second .wrapper-second .pricing .pricing-top .pricing-left p {
+    font-size: 15px !important;
+  }
+  .bg-second .wrapper-second .pricing .pricing-top .pricing-right {
+    margin-top: 20px !important;
+  }
+  .bg-second .wrapper-second .pricing .pricing-bottom {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    height: auto !important;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    padding: 40px 50px !important;
+  }
+  .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card:nth-child(3), .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card:nth-child(4) {
+    margin-top: 100px !important;
+  }
+  .bg-second .wrapper-second .pricing .pricing-bottom .pricing-card .pricing-btn {
+    margin-bottom: 30px !important;
+  }
+  .bg-second .wrapper-second .get-free .get-free-top h1 {
+    font-size: 40px !important;
+  }
+  .bg-second .wrapper-second .get-free .get-free-top p {
+    font-size: 15px !important;
+  }
+  footer .footer-left {
+    margin: 50px 50px !important;
+  }
+  footer .footer-left img {
+    width: 200px !important;
+    height: 70px !important;
+  }
+  footer .footer-left p {
+    font-size: 15px !important;
+  }
+  footer .footer-right {
+    margin-left: 20px !important;
+  }
+  footer .footer-right .footer-right-item:nth-child(1) {
+    margin-right: 50px !important;
+  }
+  footer .footer-right .footer-right-item:nth-child(2) {
+    margin-right: 34px !important;
+  }
+  footer .footer-right .footer-right-item h2 {
+    font-size: 25px !important;
+  }
+  footer .footer-right .footer-right-item ul li {
+    font-size: 15px !important;
   }
 }
 /*# sourceMappingURL=app.css.map */
